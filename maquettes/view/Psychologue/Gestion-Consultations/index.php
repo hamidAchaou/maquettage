@@ -23,6 +23,9 @@
                             <h1>Dossiers bénéficiaires</h1>
                         </div>
                         <div class="col-sm-6">
+                            <a href="./create.php" type="button" class="btn btn-primary float-right">
+                                <i class="fas fa-plus"></i> Ajouter une consultation
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -60,17 +63,39 @@
                                     <tr>
                                         <th>N° dossier</th>
                                         <th>Bénéficiaire</th>
-
                                         <th>État de processus</th>
-
                                         <th colspan="3">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center">Aucune dossier trouvée</td>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>In Progress</td>
+                                        <td>
+                                            <a href="./show.php" class='btn btn-default btn-sm'>
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                            <a href="./edit.php" class="btn btn-sm btn-default"><i
+                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                            <button type="button" class="btn btn-sm btn-danger"><i
+                                                    class="fa-solid fa-trash"></i></button>
+                                        </td>
                                     </tr>
-
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jane Smith</td>
+                                        <td>Completed</td>
+                                        <td>
+                                            <a href="./show.php" class='btn btn-default btn-sm'>
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                            <a href="./edit.php" class="btn btn-sm btn-default"><i
+                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                            <button type="button" class="btn btn-sm btn-danger"><i
+                                                    class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
