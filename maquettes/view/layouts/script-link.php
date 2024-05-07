@@ -35,5 +35,6 @@
    <script src="../../../node_modules/admin-lte/dist/js/pages/dashboard.js"></script>
    <script src="../../../node_modules/admin-lte/dist/js/validationForm.js"></script>
    <!-- scripts -->
-   
+      <script src="/../../node_modules/admin-lte/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
   <!-- Include the Quill library -->
