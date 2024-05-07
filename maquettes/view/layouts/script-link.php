@@ -34,6 +34,9 @@
    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
    <script src="../../../node_modules/admin-lte/dist/js/pages/dashboard.js"></script>
    <script src="../../../node_modules/admin-lte/dist/js/validationForm.js"></script>
+   <script src="/../../node_modules/admin-lte/dist/js/pages/dashboard.js"></script>
+   <script src="/../../node_modules/admin-lte/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+   
    <!-- scripts -->
    
   <!-- Include the Quill library -->
