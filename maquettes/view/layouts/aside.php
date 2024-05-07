@@ -99,7 +99,35 @@ $current_route = $_SERVER['REQUEST_URI'];
                                 <p>Actions</p>
                             </a>
                         </li>
+                        <li class="nav-item ">
+                            <a href="/view/autorisation/Actions/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-cogs nav-icon"></i>
+                                <p>Consultation-médecine-général</p>
+                            </a>
+                        </li>
                     </ul>
+                    
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'autorisation') !== false) ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-user-lock"></i>
+                        <p>
+                            Médecine-général
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item ">
+                            <a href="/view/médecine-général/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-cogs nav-icon"></i>
+                                <p>Consultation</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </li>
 
             </ul>
