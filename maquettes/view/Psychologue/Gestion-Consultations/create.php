@@ -102,7 +102,8 @@
                                                         </div>
                                                     </div>
 
-
+                                                    <a href="./index.php" type="submit"
+                                                        class="btn btn-secondary">Précédent</a>
                                                     <button class="btn btn-primary"
                                                         onclick="stepper.next()">Suivant</button>
                                                 </div>
