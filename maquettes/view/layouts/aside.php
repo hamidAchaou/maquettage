@@ -101,6 +101,34 @@ $current_route = $_SERVER['REQUEST_URI'];
                         </li>
                     </ul>
                 </li>
+                <!-- orthoptiste -->
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'Psychomotricien') !== false) ? 'active' : ''; ?>">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <p>
+                         Orthoptiste
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item ">
+                            <a href="/view/maquettes-orthoptiste/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'index') !== false) ? 'active' : ''; ?>">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Consultation</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/view/maquettes-orthoptiste/sciences.php"
+                                class="nav-link <?php echo (strpos($current_route, 'sciences') !== false) ? 'active' : ''; ?>">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Sciences</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </li>
 
             </ul>
         </nav>
