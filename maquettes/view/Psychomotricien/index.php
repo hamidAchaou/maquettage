@@ -201,7 +201,6 @@
                                         </tbody>
                                     </table>
                                 </div>
-
                                 <div class="d-flex justify-content-between align-items-center p-2">
                                     <div class="d-flex align-items-center mb-2">
                                         <button type="button" class="btn  btn-default btn-sm">
