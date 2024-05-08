@@ -99,7 +99,42 @@ $current_route = $_SERVER['REQUEST_URI'];
                                 <p>Actions</p>
                             </a>
                         </li>
+                        <li class="nav-item ">
+                            <a href="/view/autorisation/Actions/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-cogs nav-icon"></i>
+                                <p>Consultation-médecine-général</p>
+                            </a>
+                        </li>
                     </ul>
+                    
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'Psychomotricien') !== false) ? 'active' : ''; ?>">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <p>
+                            Psychomotricien
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item ">
+                            <a href="/view/Psychomotricien/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'index') !== false) ? 'active' : ''; ?>">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Consultation</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/view/Psychomotricien/sciences.php"
+                                class="nav-link <?php echo (strpos($current_route, 'sciences') !== false) ? 'active' : ''; ?>">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Sciences</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </li>
 
             </ul>
