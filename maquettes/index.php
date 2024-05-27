@@ -6,8 +6,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <img src="./view/assets/images/logo.png" alt="" srcset="" width="90px">
-            <h4>Gestion des Projet</h4>
+            <h4>CNMH</h4>
         </div>
         <!-- /.login-logo -->
 
