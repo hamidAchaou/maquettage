@@ -5,8 +5,8 @@ $current_route = $_SERVER['REQUEST_URI'];
 <aside class="main-sidebar sidebar-dark-info elevation-4 position-fixed">
     <!-- Logo de la marque -->
     <a href="/view/home.php" class="brand-link">
-        <img src="/view/assets/images/logo.png" class="brand-image img-circle elevation-3" alt="Image de groupe">
-        <span class="brand-text font-weight-light text-center h6">Gestion des Projets</span>
+        <img src="/view/assets/images/logo.png" class="brand-image " alt="Image de groupe">
+        <span class="brand-text font-weight-light text-center h6">CNMH</span>
     </a>
 
     <!-- Barre latérale -->
@@ -24,82 +24,102 @@ $current_route = $_SERVER['REQUEST_URI'];
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/view/GestionProjets/projets/index.php"
+                    <a href="/view/Pole-social/GestionProjets/projets/index.php"
                         class="nav-link <?php echo (strpos($current_route, 'projets') !== false) ? 'active' : ''; ?>">
-                        <i class="nav-icon fas fa-table"></i>
-                        <p>
-                            Projets
-                        </p>
+                        <i class="fa-solid fa-hospital-user"></i>
+                  <p>Dossier bénéficiaires</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="/view/GestionProjets/taches/index.php"
-                        class="nav-link <?php echo (strpos($current_route, 'taches') !== false) ? 'active' : ''; ?>">
-                        <i class="nav-icon fas fa-tasks"></i>
-                        <p>
-                            Tâches
-                        </p>
-                    </a>
-                </li>
-                <!-- MEMBRE -->
 
-                <li class="nav-item">
-                    <a href="/view/GestionProjets/members/index.php"
-                        class="nav-link <?php echo (strpos($current_route, 'members') !== false) ? 'active' : ''; ?>">
-                        <i class="fa-solid fa-users pl-1 pr-1"></i>
-                        <p>
-                            Members
-                        </p>
-                    </a>
-                </li>
+                
+               
+              
 
                 <!-- Authorisation -->
                 <li class="nav-item has-treeview">
                     <a href="#"
                         class="nav-link <?php echo (strpos($current_route, 'autorisation') !== false) ? 'active' : ''; ?>">
-                        <i class="nav-icon fas fa-user-lock"></i>
-                        <p>
-                            Autorisations
+                        <i class="fa-solid fa-gears"></i>
+                        <p class="pl-2">
+                           Service Social 
+     
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/view/GestionProjets/utilisateurs/index.php"
+                            <a href="/view/Pole-social/autorisation/Actions/index.php"
                                 class="nav-link <?php echo (strpos($current_route, 'utilisateurs') !== false) ? 'active' : ''; ?>">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
-                                <p>Utilisateurs</p>
+                                <p>List d'attente</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/view/Pole-social/autorisation/Autorisations/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Autorisations') !== false) ? 'active' : ''; ?>">
+                                <i class="far fa-check-circle nav-icon"></i>
+                                <p>Rendez vous </p>
+                            </a>
+                        </li>
+                      
+                      
+                      
+                    </ul>
+                </li>
+                <!-- Psychologue -->
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'psychologue') !== false) ? 'active' : ''; ?>">
+                        <i class="fas fa-brain"></i>
+                        <p>
+                            Psychologue
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/view/Psychologue/Gestion-Consultations/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Consultation') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <p>Consultation</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="/view/autorisation/Autorisations/index.php"
-                                class="nav-link <?php echo (strpos($current_route, 'Autorisations') !== false) ? 'active' : ''; ?>">
-                                <i class="far fa-check-circle nav-icon"></i>
-                                <p>Autorisation</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/view/autorisation/roles/index.php"
-                                class="nav-link <?php echo (strpos($current_route, 'roles') !== false) ? 'active' : ''; ?>">
-                                <i class="far fa-user-circle nav-icon"></i>
-                                <p>Rôle</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/view/autorisation/Controllers/index.php"
-                                class="nav-link <?php echo (strpos($current_route, 'Controllers') !== false) ? 'active' : ''; ?>">
-                                <i class="fas fa-gamepad nav-icon"></i>
-                                <p>Controllers</p>
+                                class="nav-link <?php echo (strpos($current_route, 'Rendez-vous') !== false) ? 'active' : ''; ?>">
+                                <i class="far fa-calendar-alt nav-icon"></i>
+                                <p>Rendez-vous</p>
                             </a>
                         </li>
                         <li class="nav-item ">
                             <a href="/view/autorisation/Actions/index.php"
                                 class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
                                 <i class="fas fa-cogs nav-icon"></i>
-                                <p>Actions</p>
+                                <p>Consultation-médecine-général</p>
                             </a>
                         </li>
                     </ul>
+                    
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'autorisation') !== false) ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-user-lock"></i>
+                        <p>
+                            Médecine-général
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item ">
+                            <a href="/view/médecine-général/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-cogs nav-icon"></i>
+                                <p>Consultation</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </li>
                 <!-- orthoptiste -->
                 <li class="nav-item has-treeview">
@@ -129,6 +149,7 @@ $current_route = $_SERVER['REQUEST_URI'];
                     </ul>
                     
                 </li>
+
 
             </ul>
         </nav>
