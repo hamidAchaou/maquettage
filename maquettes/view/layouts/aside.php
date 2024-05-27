@@ -101,7 +101,33 @@ $current_route = $_SERVER['REQUEST_URI'];
                         </li>
                     </ul>
                 </li>
-
+                <!-- Psychologue -->
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                        class="nav-link <?php echo (strpos($current_route, 'psychologue') !== false) ? 'active' : ''; ?>">
+                        <i class="fas fa-brain"></i>
+                        <p>
+                            Psychologue
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/view/Psychologue/Gestion-Consultations/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Consultation') !== false) ? 'active' : ''; ?>">
+                                <i class="fas fa-file-alt nav-icon"></i>
+                                <p>Consultation</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/view/autorisation/Autorisations/index.php"
+                                class="nav-link <?php echo (strpos($current_route, 'Rendez-vous') !== false) ? 'active' : ''; ?>">
+                                <i class="far fa-calendar-alt nav-icon"></i>
+                                <p>Rendez-vous</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
